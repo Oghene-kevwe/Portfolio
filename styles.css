@@ -69,8 +69,8 @@ img {
 
 .header {
   margin-top: 6vh;
-  margin-left: 4vw;
-  margin-right: 4vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
 }
 
 .header-con {
@@ -97,16 +97,17 @@ p {
 }
 
 .companies {
-  width: 70vw;
+  width: 80vw;
   margin: 0 auto;
   display: grid;
   gap: 1.5rem 0.5rem;
   grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
 }
 
 .companies div {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -150,12 +151,14 @@ a {
 .footer {
   font-family: "Prata", serif;
   background: #2f2f35;
-  min-height: 4rem;
+  /* min-height: 4rem; */
   display: flex;
   align-items: center;
   justify-content: space-around;
   align-content: center;
-  padding: 2rem;
+  padding: 1rem;
+  padding-left: 4vw;
+  padding-right: 4vw;
 }
 
 .footer p {
@@ -176,5 +179,50 @@ a {
   }
   .footer {
     justify-content: space-between;
+  }
+  .footer p {
+    font-size: 1.3rem;
+  }
+  .first-sec,
+  .section {
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
+  .first-art h1 {
+    font-size: 3rem;
+  }
+  .article h4 {
+    font-size: 2.2rem;
+  }
+  .section3 p {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 950px) {
+  .first-art {
+    width: 55vw;
+  }
+  .companies {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .works {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .works img,
+  .works p,
+  .section2-cont div,
+  .section2 h1 {
+    width: 40vw;
+  }
+
+  .section2-cont {
+    display: flex;
+  }
+  .para {
+    margin-right: 5rem;
   }
 }
