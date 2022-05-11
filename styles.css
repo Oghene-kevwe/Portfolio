@@ -63,14 +63,12 @@ small,
 
 img {
   display: block;
-  object-fit: cover;
-  height: 100%;
 }
 
 .header {
   margin-top: 6vh;
-  padding-left: 4vw;
-  padding-right: 4vw;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .header-con {
@@ -119,19 +117,19 @@ a {
   color: var(--white);
   text-decoration: none;
 }
+a:hover {
+  color: rgb(77, 167, 240);
+}
 .article h4 {
   margin-top: 1rem;
 }
 
 .section {
-  padding: 5rem 4vw 2rem 4vw;
+  padding: 3rem 4rem;
 }
 
 .section2 {
   background: #2f2f35;
-}
-.last-bgd {
-  padding-bottom: 3rem;
 }
 
 .button {
@@ -151,14 +149,13 @@ a {
 .footer {
   font-family: "Prata", serif;
   background: #2f2f35;
-  /* min-height: 4rem; */
   display: flex;
   align-items: center;
   justify-content: space-around;
   align-content: center;
   padding: 1rem;
-  padding-left: 4vw;
-  padding-right: 4vw;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .footer p {
@@ -183,10 +180,8 @@ a {
   .footer p {
     font-size: 1.3rem;
   }
-  .first-sec,
-  .section {
+  .first-sec {
     padding-top: 2rem;
-    padding-bottom: 0;
   }
   .first-art h1 {
     font-size: 3rem;
@@ -198,10 +193,11 @@ a {
     width: 60%;
   }
 }
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 1000px) {
   .first-art {
     width: 55vw;
   }
+
   .companies {
     display: flex;
     justify-content: space-between;
@@ -209,7 +205,7 @@ a {
   }
   .works {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
   .works img,
@@ -221,6 +217,7 @@ a {
 
   .section2-cont {
     display: flex;
+    justify-content: space-between;
   }
   .para {
     margin-right: 5rem;
