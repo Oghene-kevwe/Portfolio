@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" class="remove-scrollbar scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-quill-600 text-quill-300 font-league">
+    <!-- NAV -->
+    <nav class="nav-container w-full bg-quill-600 flex flex-col p-6">
+      <!-- menu btn -->
+      <div class="menu-btn w-fit md:hidden">
+        <button class="w-8">
+          <img
+            class="w-full"
+            src="./images/Logos/menu-5-fill-svgrepo-com.svg"
+            alt=""
+          />
+        </button>
+      </div>
+      <!-- Nav links -->
+      <div
+        class="links-container transition-all duration-700 ease-out h-0 overflow-hidden md:!h-auto"
+      >
+        <ul
+          class="links pt-6 text-xl md:text-2xl flex flex-col gap-y-4 md:flex-row md:justify-around md:pt-0"
+        >
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#works">Works</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Main -->
+    <main
+      class="main p-6 md:pl-32 md:pr-32 md:pt-10 lg:pr-48 lg:pl-48 flex flex-col"
+      id="top"
+    >
+      <!-- Home -->
+      <section class="reveal flex flex-col gap-y-4" id="home">
+        <p class="text-xl text-quill-100">Hello, my name is</p>
+        <p
+          class="font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-quill-300 to-lime-400 text-6xl md:text-8xl"
+        >
+          Idise Praise.
+        </p>
+        <p
+          class="text-transparent bg-clip-text bg-gradient-to-tl from-quill-300 to-lime-400 font-extrabold text-5xl md:text-7xl"
+        >
+          I am a frontend developer.
+        </p>
+
+        <!-- section 1 content -->
+        <div class="section-1-content">
+          <p class="text-xl lg:w-[80%]">
+            I like to think of myself as a translator because I take a
+            designer's concept and turn it into a reality.
+          </p>
+          <div class="mt-10 w-56 h-56 mr-auto ml-auto border"></div>
+        </div>
+      </section>
+
+      <!-- About Me -->
+      <section class="reveal" id="about">
+        <h2 class="text-5xl text-center mb-8 text-quill-100 capitalize">
+          About me
+        </h2>
+        <p class="text-xl mb-4">
+          I am a current undergraduate student at the Federal University of
+          Technology Akure in Nigeria, studying Urban and Regional Planning.
+          Aside from making things on the web, I occasionally write on my blog
+          and enjoy playing video games. I have one year of web development
+          experience and am currently looking for an internship opportunity to
+          advance my career. I completed many personal projects by utilizing the
+          following:
+        </p>
+
+        <div class="grid grid-cols-2 text-center gap-y-8 place-items-center">
+          <div class="html">
+            <p>HTML</p>
+            <img class="w-20" src="./images/Logos/html-1.svg" alt="" />
+          </div>
+          <div class="css">
+            <p>CSS</p>
+            <img class="w-20" src="./images/Logos/css-3.svg" alt="" />
+          </div>
+
+          <div class="javascript">
+            <p>JAVASCRIPT</p>
+            <img class="w-20" src="./images/Logos/logo-javascript.svg" alt="" />
+          </div>
+
+          <div class="tailwind">
+            <p>TAILWIND</p>
+            <img
+              class="w-20 h-[80px]"
+              src="./images/Logos/tailwind-css-2.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Works -->
+      <section class="reveal flex flex-col gap-y-4" id="works">
+        <div>
+          <h2 class="text-5xl text-center mb-8 text-quill-100 capitalize">
+            works
+          </h2>
+        </div>
+        <!-- works content -->
+        <div class="lg:pt-8 lg:pb-8">
+          <div
+            class="work rounded-md text-quill-600 bg-quill-100 p-8 pt-4 pb-4 flex flex-col gap-y-4"
+          >
+            <div>
+              <a
+                class="work-link hover:text-lime-400 transition-all duration-200 ease-out text-3xl relative h-full underLine"
+                href="https://github.com/Oghene-kevwe/CHIRP-LANDING-PAGE"
+                target="_blank"
+                >Chirps</a
+              >
+            </div>
+            <div class="relative w-fit">
+              <div
+                class="absolute z-10 w-[1.8em] bg-lime-400 p-1 grid place-items-center top-[calc(50%-12px)] -left-6"
+              >
+                <button class="prev-btn w-full animate-pulse">
+                  <img
+                    class="w-full"
+                    src="./images/Logos/left-arrow-svgrepo-com(1).min.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div
+                class="mr-auto ml-auto p-4 pt-0 pb-0 grid place-items-center"
+              >
+                <img
+                  class="work-img w-full shadow-md"
+                  src="./images/Works/Chirp.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="absolute w-[1.8em] bg-lime-400 p-1 grid place-items-center -right-6 top-[calc(50%-12px)]"
+              >
+                <button class="next-btn w-full animate-pulse">
+                  <img
+                    class="w-full"
+                    src="./images/Logos/right-arrow-svgrepo-com.min.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section class="reveal" id="contact">
+        <h2 class="text-5xl text-center mb-8 text-quill-100 capitalize">
+          Get in touch
+        </h2>
+        <p class="text-xl">
+          My inbox is always open as I am currently looking for new
+          opportunities. Please contact me if you have a question or a job
+          offer.
+        </p>
+        <div
+          class="email text-xl w-40 mt-10 shadow-md hover:bg-lime-400 mr-auto border-2 border-lime-400 text-center ml-auto"
+        >
+          <button
+            class="capitalize text-lime-400 hover:text-quill-600 pl-6 pr-6 pt-4 pb-4"
+          >
+            <a href="mailto:idisepraise@gmail.com">contact me</a>
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="footer reveal tracking-widest pt-10 pb-10 grid place-items-center gap-y-4"
+    >
+      <!-- BACK TO TOP BUTTON-->
+      <div
+        class="top-link w-[2.5rem] animate-bounce invisible fixed bottom-10 right-8"
+      >
+        <a href="#top">
+          <img
+            class="w-full"
+            src="./images/Logos/arrow-up-solid-1-svgrepo-com.min.svg"
+            alt=""
+          />
+        </a>
+      </div>
+      <!-- SOCIAL ICONS -->
+      <div class="flex flex-row gap-x-4">
+        <a href="https://twitter.com/PraiseIdise" target="_blank" class="w-8"
+          ><img class="w-full" src="./images/Social Icons/Twitter.svg" alt=""
+        /></a>
+        <a href="https://github.com/Oghene-kevwe" target="_blank" class="w-8"
+          ><img class="w-full" src="./images/Social Icons/Github.svg" alt=""
+        /></a>
+      </div>
+      <p class="text-quill-100 font-semibold">
+        Built by Idise Praise <span class="text-sm date"></span>
+      </p>
+    </footer>
+    <!-- Javascript -->
+    <script src="./app.js"></script>
+  </body>
+</html>
