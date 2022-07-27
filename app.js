@@ -93,19 +93,19 @@ const workContent = [
     id: 1,
     img: "./images/Works/Chirp.png",
     title: "View",
-    link: "https://github.com/Oghene-kevwe/CHIRP-LANDING-PAGE",
+    link: "https://oghene-kevwe.github.io/CHIRP-LANDING-PAGE/",
   },
   {
     id: 3,
     img: "./images/Works/Rating-App.png",
     title: "View",
-    link: "https://github.com/Oghene-kevwe/Interactive-Rating-App",
+    link: "https://oghene-kevwe.github.io/Interactive-Rating-App/",
   },
   {
     id: 2,
     img: "./images/Works/Ondeck.png",
     title: "View",
-    link: "https://github.com/Oghene-kevwe/ON-DECK",
+    link: "https://oghene-kevwe.github.io/ON-DECK/",
   },
 ];
 
