@@ -899,9 +899,9 @@ video {
   line-height: 1;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-sm{
@@ -983,7 +983,7 @@ video {
   bottom:0;
   left:0;
   border-radius :1em;
-  border-bottom: 4px solid #A3E635;
+  border-bottom: 2px solid #A3E635;
   height:4px;
   width: 40%;
   transition:all .2s ease-out;
