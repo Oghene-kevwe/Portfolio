@@ -92,19 +92,16 @@ const workContent = [
   {
     id: 1,
     img: "./images/Works/Chirp.png",
-    title: "View",
     link: "https://oghene-kevwe.github.io/CHIRP-LANDING-PAGE/",
   },
   {
     id: 3,
     img: "./images/Works/Rating-App.png",
-    title: "View",
     link: "https://oghene-kevwe.github.io/Interactive-Rating-App/",
   },
   {
     id: 2,
     img: "./images/Works/Ondeck.png",
-    title: "View",
     link: "https://oghene-kevwe.github.io/ON-DECK/",
   },
 ];
@@ -121,7 +118,6 @@ let currentVal = 0;
 function showWork() {
   let item = workContent[currentVal];
   image.src = item.img;
-  title.textContent = item.title;
   title.setAttribute("href", item.link);
 }
 
