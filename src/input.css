@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.remove-scrollbar {
+  scrollbar-width: none;
+}
+
+.add-blur {
+  filter: blur(4px);
+}
+
+ul a {
+  @apply hover:text-lime-400 transition-all duration-500 ease-out;
+}
+
+/* show back to top button */
+.show-link {
+  visibility: visible;
+}
+
+/* Fixed Nav */
+.fixed-nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+}
+
+/* profile image */
+.profile-img-border {
+  @apply rounded-sm border-2 border-solid border-lime-400 w-full h-full absolute top-[1.2rem] left-[1.2rem] -z-10 hover:top-[1rem] hover:left-[1rem];
+}
+.profile-img-bg {
+  @apply bg-lime-400 h-full w-full opacity-50;
+}
+
+/* Works */
+.work-container {
+  @apply p-6 rounded-sm flex flex-col  gap-y-8 bg-quill-500 shadow-lg cursor-pointer lg:hover:-translate-y-3 transition-all duration-100 ease-out;
+}
+
+.move-up {
+  transform: translateY(-0.5rem);
+}
+
+.work-title {
+  @apply text-xl text-quill-50;
+}
+
+.work-link {
+  @apply flex flex-row gap-x-8  mb-4 mt-auto;
+}
+
+.work-tools {
+  @apply text-[0.8rem] flex flex-row gap-x-4  tracking-widest text-lime-400;
+}
