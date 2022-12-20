@@ -52,7 +52,7 @@ window.addEventListener("scroll", () => {
 });
 
 // smooth scroll
-const links = document.querySelectorAll(".links-container a");
+const links = document.querySelectorAll(".link");
 links.forEach((item) => {
   item.addEventListener("click", (e) => {
     e.preventDefault();
