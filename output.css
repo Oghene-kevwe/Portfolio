@@ -1695,6 +1695,10 @@ video {
   border-bottom-width: 1px;
 }
 
+.border-b{
+  border-bottom-width: 1px;
+}
+
 .border-b-2{
   border-bottom-width: 2px;
 }
@@ -1705,10 +1709,6 @@ video {
 
 .border-r{
   border-right-width: 1px;
-}
-
-.border-b{
-  border-bottom-width: 1px;
 }
 
 .border-l{
@@ -2028,12 +2028,12 @@ video {
   font-weight: 800;
 }
 
-.font-semibold{
-  font-weight: 600;
-}
-
 .font-bold{
   font-weight: 700;
+}
+
+.font-semibold{
+  font-weight: 600;
 }
 
 .uppercase{
@@ -2546,7 +2546,7 @@ ul a:hover{
   width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(163 230 53 / var(--tw-bg-opacity));
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 /* Works */
@@ -2583,6 +2583,7 @@ ul a:hover{
 .work-title{
   font-size: 1.25rem;
   line-height: 1.75rem;
+  font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(234 235 239 / var(--tw-text-opacity));
 }
