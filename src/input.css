@@ -34,7 +34,7 @@ ul a {
   @apply rounded-sm border-2 border-solid border-lime-400 w-full h-full absolute top-[1.2rem] left-[1.2rem] -z-10 hover:top-[1rem] hover:left-[1rem];
 }
 .profile-img-bg {
-  @apply bg-lime-400 h-full w-full opacity-50;
+  @apply bg-lime-400 h-full w-full opacity-40;
 }
 
 /* Works */
@@ -47,7 +47,7 @@ ul a {
 }
 
 .work-title {
-  @apply text-xl text-quill-50;
+  @apply text-xl text-quill-50 font-bold;
 }
 
 .work-link {
