@@ -6,6 +6,10 @@ const linksContainer = document.querySelector(".links-container");
 const navLinks = document.querySelector(".links");
 const footerDate = document.querySelector(".date");
 
+// DYNAMIC DATE
+const dynamicDate = new Date().getFullYear();
+footerDate.textContent = dynamicDate;
+
 // menu btn
 menuBtn.addEventListener("click", (e) => {
   main.classList.toggle("add-blur");
