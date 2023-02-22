@@ -66,18 +66,8 @@ links.forEach((item) => {
     const id = e.currentTarget.getAttribute("href").slice(1);
     const element = document.getElementById(id);
     const navheight = navBar.getBoundingClientRect().height;
-    let containerHeight = linksContainer.getBoundingClientRect().height;
-    const fixedNav = navBar.classList.contains("fixed-nav");
 
     let position = element.offsetTop - navheight;
-
-    if (navheight > 82) {
-      position = position + containerHeight;
-    }
-
-    if (!fixedNav) {
-      position = position - navheight;
-    }
 
     window.scrollTo({
       left: 0,
@@ -109,12 +99,24 @@ const workContent = [
   {
     id: 0,
     title: "KIP Store",
-    desc: "This is an ecommerce store pulling data from an API",
-    img: "./images/Works/KIP-store.png",
+    desc: "This is an ecommerce store pulling data from FakeStore API.Sorting, Add to cart, remove from cart and total cart items are some of the functionalities",
     github: "https://github.com/Oghene-kevwe/KIP-Store",
     livelink: "https://oghene-kevwe.github.io/KIP-Store/",
-    tool1: "TailwindCss",
+    tool1: "TailwindCSS",
     tool2: "JavaScript",
+    tool3: "FakeStoreAPI",
+    backgroundClass: "kipstore",
+  },
+  {
+    id: 5,
+    title: "Musica",
+    desc: "This is a music player web app. The Top charts section changes at random. I used React for the frontend, Strapi CMS for the backend and hosted media files on cloudinary.",
+    github: "https://github.com/Oghene-kevwe/musica",
+    livelink: "https://musica-idise.netlify.app",
+    tool1: "TailwindCSS",
+    tool2: "React",
+    tool3: "Strapi",
+    backgroundClass: "musica",
   },
   {
     id: 1,
@@ -123,8 +125,10 @@ const workContent = [
     img: "./images/Works/KIP-store.png",
     github: "https://github.com/workshopapps/loveletterwriter.web",
     livelink: "https://love-me.app/",
-    tool1: "TailwindCss",
+    tool1: "TailwindCSS",
     tool2: "React.js",
+    tool3: " ",
+    backgroundClass: "loveme",
   },
   {
     id: 2,
@@ -133,8 +137,10 @@ const workContent = [
     img: "./images/Works/metabnb.png",
     github: "https://github.com/Oghene-kevwe/metabnb",
     livelink: "https://idisemetabnb.netlify.app/",
-    tool1: "TailwindCss",
+    tool1: "TailwindCSS",
     tool2: "React.js",
+    tool3: " ",
+    backgroundClass: "metabnb",
   },
   {
     id: 3,
@@ -143,8 +149,10 @@ const workContent = [
     img: "./images/Works/linktree.png",
     github: "https://github.com/Oghene-kevwe/linktree",
     livelink: "https://linktreeehng.netlify.app/",
-    tool1: "TailwindCss",
+    tool1: "TailwindCSS",
     tool2: "React.js",
+    tool3: " ",
+    backgroundClass: "linktree",
   },
   {
     id: 4,
@@ -153,8 +161,10 @@ const workContent = [
     img: "./images/Works/interactive-app.png",
     github: "https://github.com/Oghene-kevwe/Interactive-Rating-App",
     livelink: "https://oghene-kevwe.github.io/Interactive-Rating-App/",
-    tool1: "TailwindCss",
+    tool1: "TailwindCSS",
     tool2: "JavaScript",
+    tool3: " ",
+    backgroundClass: "ratingapp",
   },
 ];
 
@@ -162,21 +172,37 @@ const worksContainer = document.querySelector(".works-container");
 
 worksContainer.innerHTML = workContent
   .map((item) => {
-    const { title, desc, github, livelink, tool1, tool2 } = item;
+    const {
+      title,
+      desc,
+      github,
+      livelink,
+      tool1,
+      tool2,
+      tool3,
+      backgroundClass,
+    } = item;
     return `
-  <div class=" work-container">
+  <div class=" work-container ${backgroundClass}">
+  <div class= "overlay"></div>
+  <div class="work-content-container">
   <h3 class=" work-title" >${title}</h3>
   <p class="desc" >${desc}</p>
   <div class="work-link ">
     <a href="${livelink}"  target="_blank">
-    <img src="./images/Social Icons/link-icon.min.svg" class="card-icon" alt="livelink">
+    <img src="./images/Social-Icons/link-icon.min.svg" class="card-icon" alt="livelink">
     </a>
-    <a href="${github}" class="github" target="_blank"><img src="./images/Social Icons/Github.min.svg" class="card-icon" alt="github link"
+    <a href="${github}" class="github" target="_blank"><img src="./images/Social-Icons/Github.min.svg" class="card-icon" alt="github link"
     /></a>
   </div>
   <div class="work-tools">
-    <span class="tool1">${tool1}</span>
-    <span class="tool2">${tool2}</span>
+  <h1>Tools:</h1>
+  <div>
+    <span class="tool1">${tool1},</span>
+    <span class="tool2">${tool2},</span>
+    <span class="tool2">${tool3}</span>
+    </div>
+  </div>
   </div>
 </div>
   `;
@@ -187,7 +213,8 @@ const workContainer = document.querySelectorAll(".work-container");
 
 workContainer.forEach((card) => {
   card.addEventListener("click", (e) => {
-    const cardLink = e.currentTarget.children[2].firstElementChild.href;
+    const cardLink =
+      e.currentTarget.children[1].children[2].firstElementChild.href;
     if (!e.target.classList.contains("card-icon")) {
       window.open(cardLink);
     }

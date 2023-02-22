@@ -23,7 +23,8 @@ ul a {
 
 /* Fixed Nav */
 .fixed-nav {
-  position: fixed;
+  position: sticky;
+  /* position: fixed; */
   top: 0px;
   left: 0px;
   z-index: 10;
@@ -39,7 +40,36 @@ ul a {
 
 /* Works */
 .work-container {
-  @apply p-6 rounded-sm flex flex-col  gap-y-8 bg-quill-500 shadow-lg cursor-pointer lg:hover:-translate-y-3 transition-all duration-100 ease-out;
+  @apply p-6 rounded-sm  bg-cover cursor-pointer lg:hover:-translate-y-3 transition-all duration-100 ease-out relative shadow-sm shadow-lime-200;
+}
+
+/* Works background */
+.kipstore{
+  @apply bg-kipStore ;
+}
+.musica{
+  @apply bg-musica;
+}
+.loveme{
+  @apply bg-loveMe;
+}
+.metabnb{
+  @apply bg-metaBnb;
+}
+.linktree{
+  @apply bg-linkTree;
+}
+
+.ratingapp{
+  @apply bg-ratingApp;
+}
+
+.overlay{
+  @apply absolute h-full w-full  opacity-95 bg-quill-600 top-0 left-0 
+}
+
+.work-content-container{
+  @apply text-quill-50  relative  flex flex-col  gap-y-8
 }
 
 .move-up {
@@ -47,13 +77,24 @@ ul a {
 }
 
 .work-title {
-  @apply text-xl text-quill-50 font-bold;
+  @apply text-2xl  font-bold;
+}
+
+.desc{
+  @apply font-medium;
 }
 
 .work-link {
-  @apply flex flex-row gap-x-8  mb-4 mt-auto;
+  @apply flex gap-x-8  mb-4;
+}
+
+.work-link a{
+  @apply hover:shadow-sm hover:shadow-lime-400 rounded-full p-1;
 }
 
 .work-tools {
-  @apply text-[0.8rem] flex flex-row gap-x-4  tracking-widest text-lime-400;
+  @apply  flex items-center gap-x-2 text-[0.8rem] font-medium  ;
+}
+.work-tools>div{
+  @apply  flex flex-wrap gap-x-1 text-lime-400 ;
 }

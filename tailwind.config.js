@@ -18,7 +18,13 @@ module.exports = {
         Montserrat: ['Montserrat']
       },
       backgroundImage:{
-        'profile-image': "url('./images/potrait.jpg')"
+        'profile-image': "url('./images/profile-image/potrait.jpg')",
+        'kipStore': "url('./images/works/KipStore.png')",
+        'loveMe': "url('./images/works/loveMe.jpg')",
+        'musica': "url('./images/works/musica.jpg')",
+        'ratingApp': "url('./images/works/ratingApp.jpg')",
+        'metaBnb': "url('./images/works/metaBnb.jpg')",        
+        'linkTree': "url('./images/works/linktree.jpg')",        
       }
     },
   },

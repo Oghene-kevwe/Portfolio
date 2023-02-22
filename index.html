@@ -8,12 +8,12 @@
     <!-- Styles -->
     <link rel="stylesheet" href="./output.css" />
     <!-- animate on scroll -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
   </head>
-  <body class="bg-quill-600 text-quill-100 font-Montserrat tracking-wider">
+  <body class="bg-quill-600 text-quill-100 font-Montserrat tracking-wider max-w-7xl mr-auto ml-auto">
     <!-- NAV -->
     <nav
-      class="nav-container w-full bg-quill-600 flex flex-col pl-[5vw] pr-[5vw] p-6 max-w-7xl md:text-lg opacity-95"
+      class="nav-container w-full bg-quill-600 flex flex-col pl-[5vw] pr-[5vw] p-6  mr-auto ml-auto md:text-lg opacity-95"
       data-aos="fade-down"
       data-aos-duration="1000"
     >
@@ -28,7 +28,7 @@
           <img
             class="w-full"
             src="./images/Logos/menu-5-fill-svgrepo-com.svg"
-            alt=""
+            alt="menu"
           />
         </button>
       </div>
@@ -56,16 +56,15 @@
           <li>
             <a href="#contact" class="link">Contact</a>
           </li>
-          <li class="mt-4 md:mt-0 ">
+          <li class="mt-4 md:mt-0">
             <a
-            href="./assets/IDISE-Resume (2).pdf"
-            download="Idise_resume"
-            class="text-lime-400 border border-solid border-lime-400 grid place-items-center rounded-sm pl-3 pr-3 hover:text-quill-500 hover:bg-lime-400 transition-all duration-500 ease-out"
-            >Resume</a
-          >
+              href="./assets/IDISE-PRAISE.pdf"
+              download="Idise_resume"
+              class="text-lime-400 border border-solid border-lime-400 grid place-items-center rounded-sm pl-3 pr-3 hover:text-quill-500 hover:bg-lime-400 transition-all duration-500 ease-out"
+              >Resume</a
+            >
           </li>
         </ul>
-       
       </div>
     </nav>
     <!-- Main -->
@@ -116,7 +115,7 @@
             <div
               class="bg-profile-image bg-center bg-cover h-full w-full rounded-sm"
             >
-          <!-- profile image  background-->
+              <!-- profile image  background-->
               <div
                 class="profile-img-bg transition-all duration-100 ease-out"
               ></div>
@@ -136,11 +135,30 @@
         <h2 class="text-5xl text-center mb-8 text-quill-50 capitalize">
           About me
         </h2>
-        <p class="leading-7 mb-4">
-          My name is Praise and I started my web
-          development journey over a year ago. I am currently looking for a job where I can use my skills to help the company succeed while also advancing my career. Aside from making things on the
-          web, I enjoy fixing computers and playing video games. I have a <a href="https://idisepraise.hashnode.dev/" target="_blank" class="border-b border-solid border-lime-400 font-bold">Hashnode blog</a> where I enjoy writing about web development. So far, I have contributed to <a class="border-b border-solid border-lime-400 font-bold" href="https://github.com/layer5io/layer5" target="_blank">Layer5</a>, an open source project, and completed various projects using the following technologies:
-        </p>
+        <div>
+          <p class="leading-7 mb-4">
+            I started my web development journey over a year ago. I recently
+            completed an internship at HNG and aside from building things on the
+            web, I enjoy fixing computers and playing video games. I have a
+            <a
+              href="https://idisepraise.hashnode.dev/"
+              target="_blank"
+              class="border-b border-solid border-lime-400 font-bold"
+              >Hashnode </a
+            >blog where I sometimes write about web development. So far, I've
+            been building projects and contributing to
+            <a
+              class="border-b border-solid border-lime-400 font-bold"
+              href="https://github.com/layer5io/layer5"
+              target="_blank"
+              >Layer5</a
+            >, an open source project.
+          </p>
+          <p>
+            I currently freelance but I'm also looking for a full time job. I
+            work using the following tools and technologies:
+          </p>
+        </div>
 
         <div
           class="grid md:grid-cols-2 text-center gap-y-8 place-items-center mt-8 tracking-widest text-quill-50"
@@ -148,10 +166,13 @@
           <p class="border-b-2 border-solid border-lime-400">HTML</p>
           <p class="border-b-2 border-solid border-lime-400">CSS</p>
           <p class="border-b-2 border-solid border-lime-400">TailwindCSS</p>
-          <p class="border-b-2 border-solid border-lime-400">Styled Components</p>
+          <p class="border-b-2 border-solid border-lime-400">
+            Styled Components
+          </p>
           <p class="border-b-2 border-solid border-lime-400">JavaScript</p>
           <p class="border-b-2 border-solid border-lime-400">React.js</p>
           <p class="border-b-2 border-solid border-lime-400">GIT</p>
+          <p class="border-b-2 border-solid border-lime-400">Strapi</p>
         </div>
       </section>
 
@@ -169,7 +190,7 @@
           </h2>
         </div>
         <!-- works content -->
-        <article class="works-container grid md:grid-cols-2 gap-4"></article>
+        <article class="works-container grid md:grid-cols-2 gap-8"></article>
       </section>
 
       <!-- Contact -->
@@ -197,7 +218,7 @@
     </main>
     <!-- Footer -->
     <footer
-      class="footer tracking-widest mb-20 grid place-items-center gap-y-4"
+      class="footer tracking-widest mb-20 grid place-items-center gap-y-8"
       data-aos="fade-up"
       data-aos-duration="800"
       data-aos-once="true"
@@ -208,7 +229,7 @@
           <img
             class="w-full"
             src="./images/Logos/arrow-up-solid-1-svgrepo-com.min.svg"
-            alt=""
+            alt="up-arrow"
           />
         </a>
       </div>
@@ -217,37 +238,43 @@
         <a href="https://github.com/Oghene-kevwe" target="_blank" class="w-8"
           ><img
             class="w-full"
-            src="./images/Social Icons/Github.min.svg"
-            alt="link to github profile"
+            src="./images/Social-Icons/Github.min.svg"
+            alt="github"
         /></a>
-        <a href="https://twitter.com/PraiseIdise" target="_blank" class="w-8"
+        <a
+          href="https://www.linkedin.com/in/praise-idise-1ba954250/"
+          target="_blank"
+          class="w-8"
           ><img
             class="w-full"
-            src="./images/Social Icons/Twitter.svg"
-            alt="link to twitter profile"
+            src="./images/Social-Icons/linkedin.svg"
+            alt="linkedin"
         /></a>
       </div>
       <div class="text-center grid gap-y-1">
         <p class="text-quill-50 font-semibold">Built by Idise Praise</p>
-        <p class="text-sm date"></p>
-        <div>
-          <p class="text-[0.7rem]">
-            Design inspired by
-            <a
-              class="underline"
-              href="https://brittanychiang.com/"
-              target="_blank"
-              >Brittany Chiang</a
-            >
-          </p>
+        <div class="flex text-sm text-center w-fit mr-auto ml-auto">
+          <p>&copy; 2021-</p>
+          <p class="date"></p>
         </div>
+      </div>
+      <div>
+        <p class="text-[0.7rem]">
+          Design inspired by
+          <a
+            class="underline"
+            href="https://brittanychiang.com/"
+            target="_blank"
+            >Brittany Chiang</a
+          >
+        </p>
       </div>
     </footer>
     <!-- Javascript -->
     <script src="./app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      // AOS.init();
     </script>
   </body>
 </html>
