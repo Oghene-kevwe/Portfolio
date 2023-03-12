@@ -1,5 +1,5 @@
 // MAIN
-const menuBtn = document.querySelector(".menu-btn");
+const menuBtn = document.querySelector(".menu-btn > button");
 const main = document.querySelector(".main");
 const footer = document.querySelector(".footer");
 const linksContainer = document.querySelector(".links-container");
@@ -99,72 +99,68 @@ const workContent = [
   {
     id: 0,
     title: "KIP Store",
+    img: "./images/works/KipStore.png",
     desc: "This is an ecommerce store pulling data from FakeStore API.Sorting, Add to cart, remove from cart and total cart items are some of the functionalities",
     github: "https://github.com/Oghene-kevwe/KIP-Store",
     livelink: "https://oghene-kevwe.github.io/KIP-Store/",
     tool1: "TailwindCSS",
     tool2: "JavaScript",
     tool3: "FakeStoreAPI",
-    backgroundClass: "kipstore",
   },
   {
     id: 5,
     title: "Musica",
+    img: "./images/works/musica.jpg",
     desc: "This is a music player web app. The Top charts section changes at random. I used React for the frontend, Strapi CMS for the backend and hosted media files on cloudinary.",
     github: "https://github.com/Oghene-kevwe/musica",
     livelink: "https://musica-idise.netlify.app",
     tool1: "TailwindCSS",
     tool2: "React",
     tool3: "Strapi",
-    backgroundClass: "musica",
   },
   {
+    img: "./images/works/loveMe.jpg",
     id: 1,
     title: "Love-Me",
     desc: "I worked as a contributor on this project. It is a web app for generating different kinds of love letters using AI",
-    img: "./images/Works/KIP-store.png",
     github: "https://github.com/workshopapps/loveletterwriter.web",
     livelink: "https://love-me.app/",
     tool1: "TailwindCSS",
     tool2: "React.js",
-    tool3: " ",
-    backgroundClass: "loveme",
+    tool3: "",
   },
   {
+    img: "./images/works/metaBnb.jpg",
     id: 2,
     title: "Meta BNB",
     desc: "This is a landing page for NFT hotel in the metaverse",
-    img: "./images/Works/metabnb.png",
     github: "https://github.com/Oghene-kevwe/metabnb",
     livelink: "https://idisemetabnb.netlify.app/",
     tool1: "TailwindCSS",
     tool2: "React.js",
     tool3: " ",
-    backgroundClass: "metabnb",
   },
   {
+    img: "./images/works/linktree.jpg",
     id: 3,
     title: "Link Tree",
     desc: "This is a site you can use to show your links to different online platforms",
-    img: "./images/Works/linktree.png",
     github: "https://github.com/Oghene-kevwe/linktree",
     livelink: "https://linktreeehng.netlify.app/",
     tool1: "TailwindCSS",
     tool2: "React.js",
     tool3: " ",
-    backgroundClass: "linktree",
   },
   {
+    img: "./images/works/ratingApp.jpg",
     id: 4,
     title: "Interactive rating app",
     desc: "This is a webapp for collecting feedbacks from customers",
-    img: "./images/Works/interactive-app.png",
     github: "https://github.com/Oghene-kevwe/Interactive-Rating-App",
     livelink: "https://oghene-kevwe.github.io/Interactive-Rating-App/",
     tool1: "TailwindCSS",
     tool2: "JavaScript",
     tool3: " ",
-    backgroundClass: "ratingapp",
   },
 ];
 
@@ -174,17 +170,19 @@ worksContainer.innerHTML = workContent
   .map((item) => {
     const {
       title,
+      img,
       desc,
       github,
       livelink,
       tool1,
       tool2,
       tool3,
-      backgroundClass,
     } = item;
     return `
-  <div class=" work-container ${backgroundClass}">
-  <div class= "overlay"></div>
+  <div class=" work-container">
+  <div class= "work-image">
+  <img src="${img}"  alt= "${title}">
+  </div>
   <div class="work-content-container">
   <h3 class=" work-title" >${title}</h3>
   <p class="desc" >${desc}</p>
@@ -213,11 +211,6 @@ const workContainer = document.querySelectorAll(".work-container");
 
 workContainer.forEach((card) => {
   card.addEventListener("click", (e) => {
-    const cardLink =
-      e.currentTarget.children[1].children[2].firstElementChild.href;
-    if (!e.target.classList.contains("card-icon")) {
-      window.open(cardLink);
-    }
     card.classList.add("move-up");
     card.firstElementChild.style.color = "#a3e635";
 
