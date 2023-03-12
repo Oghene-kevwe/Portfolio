@@ -40,36 +40,18 @@ ul a {
 
 /* Works */
 .work-container {
-  @apply p-6 rounded-sm  bg-cover cursor-pointer lg:hover:-translate-y-3 transition-all duration-100 ease-out relative shadow-sm shadow-lime-200;
+  @apply p-6 rounded-lg  bg-quill-400 cursor-pointer lg:hover:-translate-y-3 transition-all duration-100 ease-out relative;
 }
 
-/* Works background */
-.kipstore{
-  @apply bg-kipStore ;
+.work-image {
+  @apply mb-4;
 }
-.musica{
-  @apply bg-musica;
-}
-.loveme{
-  @apply bg-loveMe;
-}
-.metabnb{
-  @apply bg-metaBnb;
-}
-.linktree{
-  @apply bg-linkTree;
+.work-image > img {
+  @apply rounded-md;
 }
 
-.ratingapp{
-  @apply bg-ratingApp;
-}
-
-.overlay{
-  @apply absolute h-full w-full  opacity-95 bg-quill-600 top-0 left-0 
-}
-
-.work-content-container{
-  @apply text-quill-50  relative  flex flex-col  gap-y-8
+.work-content-container {
+  @apply text-quill-50  relative  flex flex-col  gap-y-8;
 }
 
 .move-up {
@@ -80,7 +62,7 @@ ul a {
   @apply text-2xl  font-bold;
 }
 
-.desc{
+.desc {
   @apply font-medium;
 }
 
@@ -88,13 +70,13 @@ ul a {
   @apply flex gap-x-8  mb-4;
 }
 
-.work-link a{
+.work-link a {
   @apply hover:shadow-sm hover:shadow-lime-400 rounded-full p-1;
 }
 
 .work-tools {
-  @apply  flex items-center gap-x-2 text-[0.8rem] font-medium  ;
+  @apply flex items-center gap-x-2 text-[0.8rem] font-medium;
 }
-.work-tools>div{
-  @apply  flex flex-wrap gap-x-1 text-lime-400 ;
+.work-tools > div {
+  @apply flex flex-wrap gap-x-1 text-lime-400;
 }
