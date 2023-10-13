@@ -1,5 +1,5 @@
 // MAIN
-const menuBtn = document.querySelector(".menu-btn");
+const menuBtn = document.querySelector(".menu-btn > button");
 const main = document.querySelector(".main");
 const footer = document.querySelector(".footer");
 const linksContainer = document.querySelector(".links-container");
@@ -66,18 +66,8 @@ links.forEach((item) => {
     const id = e.currentTarget.getAttribute("href").slice(1);
     const element = document.getElementById(id);
     const navheight = navBar.getBoundingClientRect().height;
-    let containerHeight = linksContainer.getBoundingClientRect().height;
-    const fixedNav = navBar.classList.contains("fixed-nav");
 
     let position = element.offsetTop - navheight;
-
-    if (navheight > 82) {
-      position = position + containerHeight;
-    }
-
-    if (!fixedNav) {
-      position = position - navheight;
-    }
 
     window.scrollTo({
       left: 0,
@@ -88,18 +78,15 @@ links.forEach((item) => {
 });
 
 // profile image
-const protraitBg = document.querySelector(".profile-img-bg");
 const protraitBorder = document.querySelector(".profile-img-border");
 const profileImgContainer = document.querySelector(".profile-img-container");
 
 profileImgContainer.addEventListener("mouseover", () => {
-  protraitBg.style.opacity = 0;
   protraitBorder.style.top = "0.7rem";
   protraitBorder.style.left = "0.7rem";
 });
 
 profileImgContainer.addEventListener("mouseout", () => {
-  protraitBg.style.opacity = 0.5;
   protraitBorder.style.top = "1.2rem";
   protraitBorder.style.left = "1.2rem";
 });
@@ -109,52 +96,115 @@ const workContent = [
   {
     id: 0,
     title: "KIP Store",
-    desc: "This is an ecommerce store pulling data from an API",
-    img: "./images/Works/KIP-store.png",
+    img: "./images/works/KipStore.png",
+    desc: "This is an ecommerce store pulling data from FakeStore API.Sorting, Add to cart, remove from cart and total cart items are some of the functionalities",
     github: "https://github.com/Oghene-kevwe/KIP-Store",
     livelink: "https://oghene-kevwe.github.io/KIP-Store/",
-    tool1: "TailwindCss",
+    tool1: "TailwindCSS",
     tool2: "JavaScript",
+    tool3: "FakeStoreAPI",
   },
   {
-    id: 1,
+    id: 6,
+    title: "Settlement Dashboard",
+    img: "./images/works/settlementDashboard.png",
+    desc: "This webapp shows settlement dashboard that mimics a SaaS dashboard on the web",
+    github: "https://github.com/Oghene-kevwe/dashboard",
+    livelink: "https://settlement-db.netlify.app/",
+    tool1: "TailwindCSS",
+    tool2: "JavaScript",
+    tool3: "React.JS",
+  },
+  {
+    img: "./images/works/loveMe.jpg",
+    id: 7,
     title: "Love-Me",
     desc: "I worked as a contributor on this project. It is a web app for generating different kinds of love letters using AI",
-    img: "./images/Works/KIP-store.png",
     github: "https://github.com/workshopapps/loveletterwriter.web",
     livelink: "https://love-me.app/",
-    tool1: "TailwindCss",
+    tool1: "TailwindCSS",
     tool2: "React.js",
+    tool3: " ",
+
   },
   {
+    img: "./images/works/creditry.png",
+    id: 8,
+    title: "Creditry",
+    desc: "Landing page for a financial loan B2B platform",
+    github: "https://github.com/creditry",
+    livelink: "https://creditry.netlify.app/",
+    tool1: "TailwindCSS",
+    tool2: "React.js",
+    tool3: " ",
+
+  },
+  {
+    img: "./images/works/Deboniare.png",
+    id: 1,
+    title: "Debonaire",
+    desc: "Website for a Hair business",
+    github: "https://github.com/Oghene-kevwe/Zuri-Astro",
+    livelink: "https://zurikevwe.netlify.app/",
+    tool1: "TailwindCSS",
+    tool2: "Astro",
+    tool3: " ",
+
+  },
+  {
+    img: "./images/works/May&Joh.png",
+    id: 1,
+    title: "Ableton",
+    desc: "Recreated Ableton About page",
+    github: "https://github.com/Oghene-kevwe/May-and-Joh",
+    livelink: "https://oghene-kevwe.github.io/May-and-Joh/",
+    tool1: "HTML",
+    tool2: "CSS",
+    tool3: " ",
+  },
+  {
+    id: 5,
+    title: "Musica",
+    img: "./images/works/musica.jpg",
+    desc: "This is a music player web app. The Top charts section changes at random. I used React for the frontend, Strapi CMS for the backend and hosted media files on cloudinary.",
+    github: "https://github.com/Oghene-kevwe/musica",
+    livelink: "https://musica-idise.netlify.app",
+    tool1: "TailwindCSS",
+    tool2: "React.JS",
+    tool3: "Strapi",
+  },
+  {
+    img: "./images/works/metaBnb.jpg",
     id: 2,
     title: "Meta BNB",
     desc: "This is a landing page for NFT hotel in the metaverse",
-    img: "./images/Works/metabnb.png",
     github: "https://github.com/Oghene-kevwe/metabnb",
     livelink: "https://idisemetabnb.netlify.app/",
-    tool1: "TailwindCss",
+    tool1: "TailwindCSS",
     tool2: "React.js",
+    tool3: " ",
   },
   {
+    img: "./images/works/linktree.jpg",
     id: 3,
     title: "Link Tree",
     desc: "This is a site you can use to show your links to different online platforms",
-    img: "./images/Works/linktree.png",
     github: "https://github.com/Oghene-kevwe/linktree",
     livelink: "https://linktreeehng.netlify.app/",
-    tool1: "TailwindCss",
+    tool1: "TailwindCSS",
     tool2: "React.js",
+    tool3: " ",
   },
   {
+    img: "./images/works/ratingApp.jpg",
     id: 4,
     title: "Interactive rating app",
     desc: "This is a webapp for collecting feedbacks from customers",
-    img: "./images/Works/interactive-app.png",
     github: "https://github.com/Oghene-kevwe/Interactive-Rating-App",
     livelink: "https://oghene-kevwe.github.io/Interactive-Rating-App/",
-    tool1: "TailwindCss",
+    tool1: "TailwindCSS",
     tool2: "JavaScript",
+    tool3: " ",
   },
 ];
 
@@ -162,21 +212,32 @@ const worksContainer = document.querySelector(".works-container");
 
 worksContainer.innerHTML = workContent
   .map((item) => {
-    const { title, desc, github, livelink, tool1, tool2 } = item;
+    const { title, img, desc, github, livelink, tool1, tool2, tool3 } = item;
     return `
   <div class=" work-container">
+  <div class= "work-image">
+  <a href="${livelink}" target="_blank">
+  <img src="${img}"  alt= "${title}">
+  </a>
+  </div>
+  <div class="work-content-container">
   <h3 class=" work-title" >${title}</h3>
   <p class="desc" >${desc}</p>
   <div class="work-link ">
     <a href="${livelink}"  target="_blank">
-    <img src="./images/Social Icons/link-icon.min.svg" class="card-icon" alt="livelink">
+    <img src="./images/Social-Icons/link-icon.min.svg" class="card-icon" alt="livelink">
     </a>
-    <a href="${github}" class="github" target="_blank"><img src="./images/Social Icons/Github.min.svg" class="card-icon" alt="github link"
+    <a href="${github}" class="github" target="_blank"><img src="./images/Social-Icons/Github.min.svg" class="card-icon" alt="github link"
     /></a>
   </div>
   <div class="work-tools">
+  <h1>Tools:</h1>
+  <div>
     <span class="tool1">${tool1}</span>
     <span class="tool2">${tool2}</span>
+    <span class="tool2">${tool3}</span>
+    </div>
+  </div>
   </div>
 </div>
   `;
@@ -187,10 +248,6 @@ const workContainer = document.querySelectorAll(".work-container");
 
 workContainer.forEach((card) => {
   card.addEventListener("click", (e) => {
-    const cardLink = e.currentTarget.children[2].firstElementChild.href;
-    if (!e.target.classList.contains("card-icon")) {
-      window.open(cardLink);
-    }
     card.classList.add("move-up");
     card.firstElementChild.style.color = "#a3e635";
 
