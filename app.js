@@ -78,18 +78,15 @@ links.forEach((item) => {
 });
 
 // profile image
-const protraitBg = document.querySelector(".profile-img-bg");
 const protraitBorder = document.querySelector(".profile-img-border");
 const profileImgContainer = document.querySelector(".profile-img-container");
 
 profileImgContainer.addEventListener("mouseover", () => {
-  protraitBg.style.opacity = 0;
   protraitBorder.style.top = "0.7rem";
   protraitBorder.style.left = "0.7rem";
 });
 
 profileImgContainer.addEventListener("mouseout", () => {
-  protraitBg.style.opacity = 0.5;
   protraitBorder.style.top = "1.2rem";
   protraitBorder.style.left = "1.2rem";
 });
@@ -108,6 +105,64 @@ const workContent = [
     tool3: "FakeStoreAPI",
   },
   {
+    id: 6,
+    title: "Settlement Dashboard",
+    img: "./images/works/settlementDashboard.png",
+    desc: "This webapp shows settlement dashboard that mimics a SaaS dashboard on the web",
+    github: "https://github.com/Oghene-kevwe/dashboard",
+    livelink: "https://settlement-db.netlify.app/",
+    tool1: "TailwindCSS",
+    tool2: "JavaScript",
+    tool3: "React.JS",
+  },
+  {
+    img: "./images/works/loveMe.jpg",
+    id: 7,
+    title: "Love-Me",
+    desc: "I worked as a contributor on this project. It is a web app for generating different kinds of love letters using AI",
+    github: "https://github.com/workshopapps/loveletterwriter.web",
+    livelink: "https://love-me.app/",
+    tool1: "TailwindCSS",
+    tool2: "React.js",
+    tool3: " ",
+
+  },
+  {
+    img: "./images/works/creditry.png",
+    id: 8,
+    title: "Creditry",
+    desc: "Landing page for a financial loan B2B platform",
+    github: "https://github.com/creditry",
+    livelink: "https://creditry.netlify.app/",
+    tool1: "TailwindCSS",
+    tool2: "React.js",
+    tool3: " ",
+
+  },
+  {
+    img: "./images/works/Deboniare.png",
+    id: 1,
+    title: "Debonaire",
+    desc: "Website for a Hair business",
+    github: "https://github.com/Oghene-kevwe/Zuri-Astro",
+    livelink: "https://zurikevwe.netlify.app/",
+    tool1: "TailwindCSS",
+    tool2: "Astro",
+    tool3: " ",
+
+  },
+  {
+    img: "./images/works/May&Joh.png",
+    id: 1,
+    title: "Ableton",
+    desc: "Recreated Ableton About page",
+    github: "https://github.com/Oghene-kevwe/May-and-Joh",
+    livelink: "https://oghene-kevwe.github.io/May-and-Joh/",
+    tool1: "HTML",
+    tool2: "CSS",
+    tool3: " ",
+  },
+  {
     id: 5,
     title: "Musica",
     img: "./images/works/musica.jpg",
@@ -115,19 +170,8 @@ const workContent = [
     github: "https://github.com/Oghene-kevwe/musica",
     livelink: "https://musica-idise.netlify.app",
     tool1: "TailwindCSS",
-    tool2: "React",
+    tool2: "React.JS",
     tool3: "Strapi",
-  },
-  {
-    img: "./images/works/loveMe.jpg",
-    id: 1,
-    title: "Love-Me",
-    desc: "I worked as a contributor on this project. It is a web app for generating different kinds of love letters using AI",
-    github: "https://github.com/workshopapps/loveletterwriter.web",
-    livelink: "https://love-me.app/",
-    tool1: "TailwindCSS",
-    tool2: "React.js",
-    tool3: "",
   },
   {
     img: "./images/works/metaBnb.jpg",
@@ -168,20 +212,13 @@ const worksContainer = document.querySelector(".works-container");
 
 worksContainer.innerHTML = workContent
   .map((item) => {
-    const {
-      title,
-      img,
-      desc,
-      github,
-      livelink,
-      tool1,
-      tool2,
-      tool3,
-    } = item;
+    const { title, img, desc, github, livelink, tool1, tool2, tool3 } = item;
     return `
   <div class=" work-container">
   <div class= "work-image">
+  <a href="${livelink}" target="_blank">
   <img src="${img}"  alt= "${title}">
+  </a>
   </div>
   <div class="work-content-container">
   <h3 class=" work-title" >${title}</h3>
@@ -196,8 +233,8 @@ worksContainer.innerHTML = workContent
   <div class="work-tools">
   <h1>Tools:</h1>
   <div>
-    <span class="tool1">${tool1},</span>
-    <span class="tool2">${tool2},</span>
+    <span class="tool1">${tool1}</span>
+    <span class="tool2">${tool2}</span>
     <span class="tool2">${tool3}</span>
     </div>
   </div>

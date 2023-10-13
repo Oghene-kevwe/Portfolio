@@ -34,9 +34,6 @@ ul a {
 .profile-img-border {
   @apply rounded-sm border-2 border-solid border-lime-400 w-full h-full absolute top-[1.2rem] left-[1.2rem] -z-10 hover:top-[1rem] hover:left-[1rem];
 }
-.profile-img-bg {
-  @apply bg-lime-400 h-full w-full opacity-40;
-}
 
 /* Works */
 .work-container {
@@ -51,7 +48,7 @@ ul a {
 }
 
 .work-content-container {
-  @apply text-quill-50  relative  flex flex-col  gap-y-8;
+  @apply text-quill-50  relative  flex flex-col  gap-y-8  ;
 }
 
 .move-up {
@@ -78,5 +75,5 @@ ul a {
   @apply flex items-center gap-x-2 text-[0.8rem] font-medium;
 }
 .work-tools > div {
-  @apply flex flex-wrap gap-x-1 text-lime-400;
+  @apply flex flex-wrap gap-x-4 text-lime-400;
 }

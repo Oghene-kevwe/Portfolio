@@ -2551,14 +2551,6 @@ ul a:hover{
   left: 1rem;
 }
 
-.profile-img-bg{
-  height: 100%;
-  width: 100%;
-  --tw-bg-opacity: 1;
-  background-color: rgb(163 230 53 / var(--tw-bg-opacity));
-  opacity: 0.4;
-}
-
 /* Works */
 
 .work-container{
@@ -2644,8 +2636,8 @@ ul a:hover{
 .work-tools > div{
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 0.25rem;
-       column-gap: 0.25rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
   --tw-text-opacity: 1;
   color: rgb(163 230 53 / var(--tw-text-opacity));
 }
