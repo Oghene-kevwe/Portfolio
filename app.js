@@ -116,6 +116,17 @@ const workContent = [
     tool3: "React.JS",
   },
   {
+    id: 9,
+    title: "CoreInfra",
+    img: "./images/works/core-Infra.png",
+    desc: "Landing Page for CoreInfra Solutions Ltd",
+    github: "#",
+    livelink: "https://core-infra.netlify.app/",
+    tool1: "TailwindCSS",
+    tool2: "JavaScript",
+    tool3: "React.JS",
+  },
+  {
     img: "./images/works/loveMe.jpg",
     id: 7,
     title: "Love-Me",
