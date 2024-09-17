@@ -94,6 +94,17 @@ profileImgContainer.addEventListener("mouseout", () => {
 //  WORKS CONTENT
 const workContent = [
   {
+    id: 12,
+    title: "Terminus",
+    img: "./images/works/terminus.png",
+    desc: "A POS Monitoring solution for tracking transactions of a POS terminal",
+    github: "#",
+    livelink: "#",
+    tool1: "TailwindCSS",
+    tool2: "JavaScript",
+    tool3: "React.JS",
+  },
+  {
     id: 0,
     title: "KIP Store",
     img: "./images/works/KipStore.png",
@@ -119,7 +130,7 @@ const workContent = [
     id: 11,
     title: "Fredacom",
     img: "./images/works/fredacom.png",
-    desc: "Website for Fredacom",
+    desc: "Website for Fredacom, a market place for buying and selling data",
     github: "#",
     livelink: "https://fredacom.com/",
     tool1: "TailwindCSS",
