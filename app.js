@@ -105,6 +105,17 @@ const workContent = [
     tool3: "React.JS",
   },
   {
+    id: 13,
+    title: "CRM solution for a delivery company",
+    img: "./images/works/Delivery-CRM.png",
+    desc: "Admin Dashboard section to manage riders, users and orders ",
+    github: "https://github.com/Oghene-kevwe/CRM-BootStrap",
+    livelink: "https://crmridersite.netlify.app/",
+    tool1: "TailwindCSS",
+    tool2: "JavaScript",
+    tool3: "React.JS",
+  },
+  {
     id: 0,
     title: "KIP Store",
     img: "./images/works/KipStore.png",
@@ -158,7 +169,6 @@ const workContent = [
     tool1: "TailwindCSS",
     tool2: "React.js",
     tool3: " ",
-
   },
   {
     img: "./images/works/creditry.png",
@@ -170,7 +180,6 @@ const workContent = [
     tool1: "TailwindCSS",
     tool2: "React.js",
     tool3: " ",
-
   },
   {
     img: "./images/works/Deboniare.png",
@@ -182,7 +191,6 @@ const workContent = [
     tool1: "TailwindCSS",
     tool2: "Astro",
     tool3: " ",
-
   },
   {
     img: "./images/works/May&Joh.png",

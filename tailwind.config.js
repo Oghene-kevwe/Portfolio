@@ -18,7 +18,7 @@ module.exports = {
         Montserrat: ['Montserrat']
       },
       backgroundImage:{
-        'profile-image': "url('./images/profile-image/potrait.jpg')",    
+        'profile-image': "url('./images/profile-image/potrait.jpeg')",    
       }
     },
   },
