@@ -127,17 +127,6 @@ const workContent = [
     tool3: "GPT-3",
   },
   {
-    id: 14,
-    title: "FXTradeVolt",
-    img: "./images/works/tradeVolts.png",
-    desc: "Web app for a portfolio management system",
-    github: "https://github.com/Oghene-kevwe/FXTradeVolt",
-    livelink: "https://www.tradevolt.us/",
-    tool1: "C#",
-    tool2: "JavaScript",
-    tool3: "React.JS",
-  },
-  {
     id: 9,
     title: "CoreInfra",
     img: "./images/works/core-Infra.png",
