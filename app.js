@@ -116,6 +116,17 @@ const workContent = [
     tool3: "React.JS",
   },
   {
+    id: 14,
+    title: "Medical Advance Platform",
+    img: "./images/works/map4u.png",
+    desc: "This is the Qoute Dashboard section showing the UX flow for Qoute response ",
+    github: "https://github.com/Oghene-kevwe/MAP-interview-project",
+    livelink: "https://medicaladvancedplatform.netlify.app/",
+    tool1: "JavaScript",
+    tool2: "React.JS",
+    tool3: " ",
+  },
+  {
     img: "./images/works/loveMe.jpg",
     id: 7,
     title: "Love-Me",
