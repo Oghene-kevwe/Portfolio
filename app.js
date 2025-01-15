@@ -109,6 +109,14 @@ const workContent = [
     livelink: "https://crmridersite.netlify.app/",
   },
   {
+    id: 15,
+    title: "Log Analyzer",
+    desc: "C# Library API for analyzing and sorting log files ",
+    github: "https://github.com/Oghene-kevwe/LogAnalyzerLibrary",
+    livelink:
+      "https://documenter.getpostman.com/view/27915658/2sAYQXpDao#intro",
+  },
+  {
     id: 14,
     title: "Medical Advance Platform",
     desc: "This is the Qoute dashboard  showing the UX flow for a qoute response ",
