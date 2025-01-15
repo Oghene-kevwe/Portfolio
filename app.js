@@ -40,7 +40,7 @@ const navBar = document.querySelector(".nav-container");
 const BacktoTop = document.querySelector(".top-link");
 window.addEventListener("scroll", () => {
   const navheight = navBar.getBoundingClientRect().height;
-  const scrollHeight = window.pageYOffset;
+  const scrollHeight = window.scrollY;
 
   if (scrollHeight > navheight) {
     navBar.classList.add("fixed-nav");
@@ -98,176 +98,116 @@ const workContent = [
     title: "Terminus",
     img: "./images/works/terminus.png",
     desc: "A fintech POS Monitoring solution for tracking transactions of a POS terminal",
-    github: "#",
-    livelink: "#",
-    tool1: "C#",
-    tool2: "JavaScript",
-    tool3: "React.JS",
+    github: "https://github.com/Oghene-kevwe/PavilionPOSMerchantWebApp",
+    livelink: "https://pavilion-dev.netlify.app/login",
   },
   {
     id: 13,
     title: "CRM solution for a delivery company",
-    img: "./images/works/Delivery-CRM.png",
-    desc: "This is the Admin Dashboard section to manage riders, users and orders ",
+    desc: "This is the Admin platform to manage riders, users and orders ",
     github: "https://github.com/Oghene-kevwe/CRM-BootStrap",
     livelink: "https://crmridersite.netlify.app/",
-    tool1: "C#",
-    tool2: "JavaScript",
-    tool3: "React.JS",
   },
   {
     id: 14,
     title: "Medical Advance Platform",
-    img: "./images/works/map4u.png",
-    desc: "This is the Qoute Dashboard section showing the UX flow for Qoute response ",
+    desc: "This is the Qoute dashboard  showing the UX flow for a qoute response ",
     github: "https://github.com/Oghene-kevwe/MAP-interview-project",
     livelink: "https://medicaladvancedplatform.netlify.app/",
-    tool1: "JavaScript",
-    tool2: "React.JS",
-    tool3: " ",
   },
   {
-    img: "./images/works/loveMe.jpg",
     id: 7,
     title: "Love-Me",
     desc: "Web app for generating different kinds of love letters using AI",
     github: "https://github.com/workshopapps/loveletterwriter.web",
     livelink: "https://love-me.app/",
-    tool1: "C#",
-    tool2: "React.js",
-    tool3: "GPT-3",
   },
   {
     id: 9,
     title: "CoreInfra",
-    img: "./images/works/core-Infra.png",
     desc: "Website for CoreInfra Solutions Ltd",
     github: "#",
     livelink: "https://core-infra.netlify.app/",
-    tool1: "TailwindCSS",
-    tool2: "JavaScript",
-    tool3: "React.JS",
   },
   {
     id: 0,
     title: "KIP Store",
-    img: "./images/works/KipStore.png",
-    desc: "This is an ecommerce web app featuring add to cart, sorting, remove from cart and total cart items",
+    desc: "This is an ecommerce web app",
     github: "https://github.com/Oghene-kevwe/KIP-Store",
     livelink: "https://oghene-kevwe.github.io/KIP-Store/",
-    tool1: "TailwindCSS",
-    tool2: "JavaScript",
-    tool3: "FakeStoreAPI",
   },
   {
     id: 15,
     title: "Sureplug",
-    img: "./images/works/surePlug.jpeg",
     desc: "Mobile chat application for connecting cryptocurrency buyers ",
     github: "https://github.com/Oghene-kevwe/sureplug-clone",
     livelink: "#",
-    tool1: "React Native",
-    tool2: "JavaScript",
-    tool3: "Supabase",
   },
   {
     id: 6,
     title: "Settlement Dashboard",
-    img: "./images/works/settlementDashboard.png",
     desc: "This webapp shows a settlement dashboard for fintech",
     github: "https://github.com/Oghene-kevwe/dashboard",
     livelink: "https://settlement-db.netlify.app/",
-    tool1: "TailwindCSS",
-    tool2: "JavaScript",
-    tool3: "React.JS",
   },
   {
-    img: "./images/works/creditry.png",
     id: 8,
     title: "Creditry",
     desc: "Landing page for a financial loan B2B platform",
     github: "https://github.com/creditry",
     livelink: "https://creditry.netlify.app/",
-    tool1: "TailwindCSS",
-    tool2: "React.js",
-    tool3: " ",
   },
   {
     id: 11,
     title: "Fredacom",
-    img: "./images/works/fredacom.png",
     desc: "Website for Fredacom, a market place for buying and selling data",
-    github: "#",
+    github: "https://github.com/TheFredacom",
     livelink: "https://fredacom.com/",
     tool1: "TailwindCSS",
     tool2: "JavaScript",
     tool3: "React.JS",
   },
   {
-    img: "./images/works/Deboniare.png",
+    id: 5,
+    title: "Musica",
+    desc: "This is a music player web app.",
+    github: "https://github.com/Oghene-kevwe/musica",
+    livelink: "https://musica-idise.netlify.app",
+  },
+  {
     id: 10,
     title: "Debonaire",
     desc: "Website for a Hair business",
     github: "https://github.com/Oghene-kevwe/Zuri-Astro",
     livelink: "https://zurikevwe.netlify.app/",
-    tool1: "TailwindCSS",
-    tool2: "Astro",
-    tool3: " ",
   },
   {
-    img: "./images/works/May&Joh.png",
     id: 1,
     title: "Ableton",
     desc: "Recreated Ableton About page",
     github: "https://github.com/Oghene-kevwe/May-and-Joh",
     livelink: "https://oghene-kevwe.github.io/May-and-Joh/",
-    tool1: "HTML",
-    tool2: "CSS",
-    tool3: " ",
   },
   {
-    id: 5,
-    title: "Musica",
-    img: "./images/works/musica.jpg",
-    desc: "This is a music player web app. The Top charts section changes at random. I used React for the frontend, Strapi CMS for the backend and hosted media files on cloudinary.",
-    github: "https://github.com/Oghene-kevwe/musica",
-    livelink: "https://musica-idise.netlify.app",
-    tool1: "TailwindCSS",
-    tool2: "React.JS",
-    tool3: "Strapi",
-  },
-  {
-    img: "./images/works/metaBnb.jpg",
     id: 2,
     title: "Meta BNB",
     desc: "This is a landing page for NFT hotel in the metaverse",
     github: "https://github.com/Oghene-kevwe/metabnb",
     livelink: "https://idisemetabnb.netlify.app/",
-    tool1: "TailwindCSS",
-    tool2: "React.js",
-    tool3: " ",
   },
   {
-    img: "./images/works/linktree.jpg",
     id: 3,
     title: "Link Tree",
     desc: "This is a site you can use to show your links to different online platforms",
     github: "https://github.com/Oghene-kevwe/linktree",
     livelink: "https://linktreeehng.netlify.app/",
-    tool1: "TailwindCSS",
-    tool2: "React.js",
-    tool3: " ",
   },
   {
-    img: "./images/works/ratingApp.jpg",
     id: 4,
     title: "Interactive rating app",
     desc: "This is a webapp for collecting feedbacks from customers",
     github: "https://github.com/Oghene-kevwe/Interactive-Rating-App",
     livelink: "https://oghene-kevwe.github.io/Interactive-Rating-App/",
-    tool1: "TailwindCSS",
-    tool2: "JavaScript",
-    tool3: " ",
   },
 ];
 
@@ -275,16 +215,11 @@ const worksContainer = document.querySelector(".works-container");
 
 worksContainer.innerHTML = workContent
   .map((item) => {
-    const { title, img, desc, github, livelink, tool1, tool2, tool3 } = item;
+    const { title, desc, github, livelink } = item;
     return `
   <div class=" work-container">
-  <div class= "work-image">
-  <a href="${livelink}" target="_blank">
-  <img src="${img}"  alt= "${title}">
-  </a>
-  </div>
   <div class="work-content-container">
-  <h3 class=" work-title" >${title}</h3>
+   <h3 class=" work-title" >${title}</h3>
   <p class="desc" >${desc}</p>
   <div class="work-link ">
     <a href="${livelink}"  target="_blank">
@@ -292,14 +227,6 @@ worksContainer.innerHTML = workContent
     </a>
     <a href="${github}" class="github" target="_blank"><img src="./images/Social-Icons/Github.min.svg" class="card-icon" alt="github link"
     /></a>
-  </div>
-  <div class="work-tools">
-  <h1>Tools:</h1>
-  <div>
-    <span class="tool1">${tool1}</span>
-    <span class="tool2">${tool2}</span>
-    <span class="tool2">${tool3}</span>
-    </div>
   </div>
   </div>
 </div>
