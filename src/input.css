@@ -37,11 +37,11 @@ ul a {
 
 /* Works */
 .work-container {
-  @apply p-4 rounded-lg  bg-quill-400 cursor-pointer lg:hover:-translate-y-3 transition-all duration-100 ease-out relative;
+  @apply p-4 rounded-lg  bg-quill-400 cursor-pointer lg:hover:-translate-y-3 transition-all duration-100 ease-out relative min-h-[200px] max-h-fit flex flex-col justify-between;
 }
 
 .work-content-container {
-  @apply text-quill-50  relative  flex flex-col  gap-y-4;
+  @apply text-quill-50  relative  flex flex-col  gap-y-6 h-full;
 }
 
 .move-up {
@@ -53,9 +53,17 @@ ul a {
 }
 
 .work-link {
-  @apply flex gap-x-8  mb-4;
+  @apply flex gap-x-8 mb-auto
 }
 
 .work-link a {
   @apply hover:shadow-sm hover:shadow-lime-400 rounded-full p-1;
+}
+
+.work-tools{
+  @apply flex gap-2 text-xs flex-wrap mt-auto
+}
+
+.work-tools span {
+  @apply bg-gray-600 rounded-full p-1 px-2
 }
