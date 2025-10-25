@@ -165,7 +165,7 @@ const workContent = [
     title: "CRM solution for Legal Drop",
     desc: "This is the Admin platform to manage riders, users and orders ",
     github: "https://github.com/Oghene-kevwe/CRM-BootStrap",
-    livelink: "https://crmridersite.netlify.app",
+    livelink: "https://legaldrop.ca/",
     tools: ["Node.js", "React", "Typescript", "Google Maps API"],
   },
   {
@@ -212,7 +212,7 @@ const workContent = [
   {
     id: 17,
     title: "Kip Restaurant",
-    desc: "A Restaurant backend web app for managing orders, users and menu items",
+    desc: "A restaurant backend web app for managing orders, users and menu items",
     github: "https://github.com/Oghene-kevwe/KIP-Restaurant",
     livelink: "#",
     tools: ["ASP.NET", "SQL Server"],
@@ -258,25 +258,34 @@ const workContent = [
     tools: ["React", "TailwindCSS"],
   },
 ];
-
 const worksContainer = document.querySelector(".works-container");
+const privateProjectIds = [18, 12]; // your private IDs
 
 worksContainer.innerHTML = workContent
   .map((item) => {
-    const { title, desc, github, livelink, tools } = item;
+    const { id, title, desc, github, livelink, tools } = item;
+    const isPrivate = privateProjectIds.includes(id);
+
+    // if private, show message instead of links
+    const linkSection = isPrivate
+      ? `<p class="private-text">(Private project – not publicly launched)</p>`
+      : `
+        <div class="work-link">
+          <a href="${livelink}" target="_blank">
+            <img src="./images/Social-Icons/link-icon.min.svg" class="card-icon" alt="livelink">
+          </a>
+          <a href="${github}" class="github" target="_blank">
+            <img src="./images/Social-Icons/Github.min.svg" class="card-icon" alt="github link">
+          </a>
+        </div>
+      `;
+
     return `
       <div class="work-container">
         <div class="work-content-container">
           <h3 class="work-title">${title}</h3>
           <p class="desc">${desc}</p>
-          <div class="work-link">
-            <a href="${livelink}" target="_blank">
-              <img src="./images/Social-Icons/link-icon.min.svg" class="card-icon" alt="livelink">
-            </a>
-            <a href="${github}" class="github" target="_blank">
-              <img src="./images/Social-Icons/Github.min.svg" class="card-icon" alt="github link">
-            </a>
-          </div>
+          ${linkSection}
           <div class="work-tools">
             ${tools?.map((tool) => `<span>${tool}</span>`).join("") || ""}
           </div>
