@@ -91,55 +91,19 @@ profileImgContainer.addEventListener("mouseout", () => {
   protraitBorder.style.left = "1.2rem";
 });
 
-//   // {
-//   //   id: 5,
-//   //   title: "Musica",
-//   //   desc: "This is a music player web app.",
-//   //   github: "https://github.com/Oghene-kevwe/musica",
-//   //   livelink: "https://musica-idise.netlify.app",
-//   // },
-//   // {
-//   //   id: 10,
-//   //   title: "Debonaire",
-//   //   desc: "Website for a Hair business",
-//   //   github: "https://github.com/Oghene-kevwe/Zuri-Astro",
-//   //   livelink: "https://zurikevwe.netlify.app/",
-//   // },
-//   // {
-//   //   id: 1,
-//   //   title: "Ableton",
-//   //   desc: "Recreated Ableton About page",
-//   //   github: "https://github.com/Oghene-kevwe/May-and-Joh",
-//   //   livelink: "https://oghene-kevwe.github.io/May-and-Joh/",
-//   // },
-//   // {
-//   //   id: 2,
-//   //   title: "Meta BNB",
-//   //   desc: "This is a landing page for NFT hotel in the metaverse",
-//   //   github: "https://github.com/Oghene-kevwe/metabnb",
-//   //   livelink: "https://idisemetabnb.netlify.app/",
-//   // },
-//   // {
-//   //   id: 3,
-//   //   title: "Link Tree",
-//   //   desc: "This is a site you can use to show your links to different online platforms",
-//   //   github: "https://github.com/Oghene-kevwe/linktree",
-//   //   livelink: "https://linktreeehng.netlify.app/",
-//   // },
-//   // {
-//   //   id: 4,
-//   //   title: "Interactive rating app",
-//   //   desc: "This is a webapp for collecting feedbacks from customers",
-//   //   github: "https://github.com/Oghene-kevwe/Interactive-Rating-App",
-//   //   livelink: "https://oghene-kevwe.github.io/Interactive-Rating-App/",
-//   // },
-// ];
-
 const workContent = [
+  {
+    id: 21,
+    title: "Qurexa",
+    desc: "Engineered the complete backend infrastructure for Qurexa, covering API design, authentication, data modeling, and production deployment.",
+    github: "#",
+    livelink: "https://qurexa.co.uk",
+    tools: ["Node", "Express", "MongoDB"],
+  },
   {
     id: 18,
     title: "PayInfra",
-    desc: "This is a payment infrasturcture and loyalty system built for a franchise ",
+    desc: "Developed a payment infrastructure and loyalty system for a franchise",
     github: "#",
     livelink: "#",
     tools: ["React", "ASP.NET", "SQL Server"],
@@ -147,7 +111,7 @@ const workContent = [
   {
     id: 12,
     title: "Terminus",
-    desc: "A fintech POS Monitoring solution for tracking transactions of a POS terminal",
+    desc: "Built a fintech POS monitoring solution for tracking transactions and performance of POS terminals.",
     github: "https://github.com/Oghene-kevwe/PavilionPOSMerchantWebApp",
     livelink: "https://pavilion-dev.netlify.app/login",
     tools: ["React", "ASP.NET", "SQL Server"],
@@ -155,7 +119,7 @@ const workContent = [
   {
     id: 20,
     title: "504 Driving School",
-    desc: "This is a driving school platform for managing students bookings, classes and courses",
+    desc: "Developed a platform for managing student bookings, classes, and courses for 504 Driving School.",
     github: "#",
     livelink: "https://504driving.netlify.app",
     tools: ["React", "ASP.NET", "SQL Server"],
@@ -163,7 +127,7 @@ const workContent = [
   {
     id: 13,
     title: "CRM solution for Legal Drop",
-    desc: "This is the Admin platform to manage riders, users and orders ",
+    desc: "Built an admin platform for managing riders, users, and orders for Legal Drop.",
     github: "https://github.com/Oghene-kevwe/CRM-BootStrap",
     livelink: "https://legaldrop.ca/",
     tools: ["Node.js", "React", "Typescript", "Google Maps API"],
@@ -171,7 +135,7 @@ const workContent = [
   {
     id: 19,
     title: "The Delivery Ease Logistics",
-    desc: "This is a logistics platform for managing deliveries and riders",
+    desc: "Rebuilt and optimized the backend for The Delivery Ease Logistics. Added real-time tracking with Google Maps API and refined the React frontend.",
     github: "#",
     livelink: "https://thedeliveryeaselogistics.com",
     tools: ["React", "Laravel", "MySQL", "Google Maps API", "AWS"],
@@ -179,9 +143,9 @@ const workContent = [
   {
     id: 9,
     title: "CoreInfra",
-    desc: "Website for CoreInfra Solutions Ltd",
+    desc: "Built the official website for CoreInfra Solutions Ltd.",
     github: "#",
-    livelink: "https://core-infra.netlify.app/",
+    livelink: "https://coreinfrahq.com/",
     tools: ["React", "TailwindCSS"],
   },
   {
@@ -191,14 +155,6 @@ const workContent = [
     github: "https://github.com/workshopapps/loveletterwriter.web",
     livelink: "https://love-me.app/",
     tools: ["React", "Node.js", "OpenAI API"],
-  },
-  {
-    id: 15,
-    title: "Sureplug",
-    desc: "Mobile chat application for connecting cryptocurrency buyers ",
-    github: "https://github.com/Oghene-kevwe/sureplug-clone",
-    livelink: "#",
-    tools: ["React Native", "Expo", "Supabase"],
   },
   {
     id: 16,
@@ -212,7 +168,7 @@ const workContent = [
   {
     id: 17,
     title: "Kip Restaurant",
-    desc: "A restaurant backend web app for managing orders, users and menu items",
+    desc: "Developed a backend web app for managing restaurant orders, users, and menu items",
     github: "https://github.com/Oghene-kevwe/KIP-Restaurant",
     livelink: "#",
     tools: ["ASP.NET", "SQL Server"],
@@ -220,7 +176,7 @@ const workContent = [
   {
     id: 14,
     title: "Medical Advance Platform",
-    desc: "This is the Qoute dashboard showing the UX flow for a qoute response ",
+    desc: "Developed a Quote Dashboard demonstrating the UX flow for quote responses.",
     github: "https://github.com/Oghene-kevwe/MAP-interview-project",
     livelink: "https://medicaladvancedplatform.netlify.app/",
     tools: ["React", "TailwindCSS"],
@@ -228,43 +184,53 @@ const workContent = [
   {
     id: 0,
     title: "KIP Store",
-    desc: "This is an ecommerce website showing products from the FakestoreAPI",
+    desc: "Built an eCommerce website that displays products dynamically from the FakeStore API.",
     github: "https://github.com/Oghene-kevwe/KIP-Store",
     livelink: "https://oghene-kevwe.github.io/KIP-Store/",
     tools: ["TailwindCSS", "FakestoreAPI", "JavaScript"],
   },
   {
-    id: 11,
-    title: "Fredacom",
-    desc: "Web app for Fredacom, a market place for buying and selling research data",
-    github: "https://github.com/TheFredacom",
-    livelink: "https://fredacom.com/",
-    tools: ["TailwindCSS", "React", "Node.js"],
-  },
-  {
     id: 6,
     title: "Settlement Dashboard",
-    desc: "This webapp shows a settlement dashboard for fintech",
+    desc: "Developed a fintech settlement dashboard for monitoring transactions and settlements.",
     github: "https://github.com/Oghene-kevwe/dashboard",
     livelink: "https://settlement-db.netlify.app/",
     tools: ["React", "TailwindCSS"],
   },
   {
+    id: 15,
+    title: "Sureplug",
+    desc: "Mobile chat application for connecting cryptocurrency buyers ",
+    github: "https://github.com/Oghene-kevwe/sureplug-clone",
+    livelink: "#",
+    tools: ["React Native", "Expo", "Supabase"],
+  },
+  {
     id: 8,
     title: "Creditry",
-    desc: "Landing page for a financial loan B2B platform",
+    desc: "Designed and built a landing page for Creditry, a financial B2B loan platform.",
     github: "https://github.com/creditry",
     livelink: "https://creditry.netlify.app/",
     tools: ["React", "TailwindCSS"],
   },
+  {
+    id: 11,
+    title: "Fredacom",
+    desc: "Built a web app marketplace for buying and selling research data for Fredacom.",
+    github: "https://github.com/TheFredacom",
+    livelink: "https://fredacom.com/",
+    tools: ["TailwindCSS", "React", "Node.js"],
+  },
 ];
 const worksContainer = document.querySelector(".works-container");
 const privateProjectIds = [18, 12]; // your private IDs
+const githubHiddenIds = [21, 20, 19, 13, 9];
 
 worksContainer.innerHTML = workContent
   .map((item) => {
     const { id, title, desc, github, livelink, tools } = item;
     const isPrivate = privateProjectIds.includes(id);
+    const hideGithub = githubHiddenIds.includes(id);
 
     // if private, show message instead of links
     const linkSection = isPrivate
@@ -274,9 +240,13 @@ worksContainer.innerHTML = workContent
           <a href="${livelink}" target="_blank">
             <img src="./images/Social-Icons/link-icon.min.svg" class="card-icon" alt="livelink">
           </a>
-          <a href="${github}" class="github" target="_blank">
+          ${
+            hideGithub
+              ? ""
+              : `<a href="${github}" class="github" target="_blank">
             <img src="./images/Social-Icons/Github.min.svg" class="card-icon" alt="github link">
-          </a>
+          </a>`
+          }
         </div>
       `;
 
