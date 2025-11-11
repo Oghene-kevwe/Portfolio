@@ -98,7 +98,7 @@ const workContent = [
     desc: "Engineered the complete backend infrastructure for Qurexa, covering API design, authentication, data modeling, and production deployment.",
     github: "#",
     livelink: "https://qurexa.co.uk",
-    tools: ["Node", "Express", "MongoDB"],
+    tools: ["Node", "Express", "MongoDB","AWS"],
   },
   {
     id: 18,
