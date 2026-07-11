@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://praise.progomidsolutions.com/sitemap.xml
+Sitemap: https://progomidsolutions.com/sitemap.xml
