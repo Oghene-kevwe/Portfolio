@@ -94,7 +94,7 @@ const workContent = [
   {
     key: "campus-bridge",
     title: "Campus Bridge",
-    desc: "Built a full-stack student accommodation and services platform with secure authentication, listing management, real-time chat, KYC verification, and payment workflows.",
+    desc: "Full-stack student accommodation platform with listing management, real-time chat, KYC verification, and payment workflows.",
     github: "https://github.com/praise-idise/CampusBridge-BE",
     livelink: "https://campusbridgeapp.netlify.app/",
     tools: ["React", "TypeScript", "ASP.NET", "SQL Server", "SignalR"],
@@ -102,7 +102,7 @@ const workContent = [
   {
     key: "smart-library",
     title: "Smart Library",
-    desc: "Built a full-stack online library management platform with book cataloging, borrowing and return workflows, JWT authentication with refresh tokens, role-based dashboards and background job processing for overdue reminders.",
+    desc: "Full-stack library platform with book cataloging, borrowing/return workflows, JWT auth with refresh tokens, role-based dashboards, and automated overdue reminders.",
     github: "https://github.com/praise-idise/SmartLibrary_FE",
     livelink: "https://smart-library-app.netlify.app",
     tools: [
@@ -118,7 +118,7 @@ const workContent = [
   {
     key: "kip-inventory",
     title: "KIP Inventory",
-    desc: "Developed an ERP-grade inventory management system with multi-warehouse stock tracking, purchase order lifecycle management (draft to receipt), approval workflows, idempotent transaction processing with serializable isolation, low-stock monitoring with auto-reorder, and comprehensive audit trails via stock movement records.",
+    desc: "ERP-grade inventory system with multi-warehouse tracking, purchase order lifecycle management, approval workflows, low-stock auto-reorder, and full audit trails.",
     github: "https://github.com/praise-idise/KipInventoryMGT-FE",
     livelink: "https://kipinventory.netlify.app",
     tools: [
@@ -174,7 +174,7 @@ const workContent = [
   {
     key: "delivery-ease-logistics",
     title: "The Delivery Ease Logistics",
-    desc: "Rebuilt and optimized the backend for The Delivery Ease Logistics. Added real-time tracking with Google Maps API and refined the React frontend.",
+    desc: "Rebuilt the backend with real-time Google Maps tracking and optimized the React frontend.",
     github: "#",
     livelink: "https://thedeliveryeaselogistics.com",
     tools: ["React", "Laravel", "MySQL", "Google Maps API", "AWS"],
