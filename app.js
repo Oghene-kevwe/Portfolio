@@ -92,6 +92,22 @@ profileImgContainer.addEventListener("mouseout", () => {
 });
 const workContent = [
   {
+    key: "kip-inventory",
+    title: "Kip Inventory",
+    desc: "ERP-grade inventory system with multi-warehouse tracking, purchase order lifecycle management, approval workflows, low-stock auto-reorder, and full audit trails.",
+    github: "https://github.com/praise-idise/KipInventoryMGT-FE",
+    livelink: "https://kipinventory.com",
+    tools: [
+      "React",
+      "TypeScript",
+      "ASP.NET Core",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "Hangfire",
+    ],
+  },
+  {
     key: "campus-bridge",
     title: "Campus Bridge",
     desc: "Full-stack student accommodation platform with listing management, real-time chat, KYC verification, and payment workflows.",
@@ -112,22 +128,6 @@ const workContent = [
       "SQL Server",
       "Redis",
       "Stripe",
-      "Hangfire",
-    ],
-  },
-  {
-    key: "kip-inventory",
-    title: "KIP Inventory",
-    desc: "ERP-grade inventory system with multi-warehouse tracking, purchase order lifecycle management, approval workflows, low-stock auto-reorder, and full audit trails.",
-    github: "https://github.com/praise-idise/KipInventoryMGT-FE",
-    livelink: "https://kipinventory.netlify.app",
-    tools: [
-      "React",
-      "TypeScript",
-      "ASP.NET Core",
-      "PostgreSQL",
-      "Redis",
-      "Docker",
       "Hangfire",
     ],
   },
